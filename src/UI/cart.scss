@@ -1,0 +1,42 @@
+.cart {
+  color: #fff;
+  border-radius: 4rem;
+  padding: 1rem 2rem;
+  border: 1px solid #e67700;
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: #f08c00;
+  &__content {
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #e8590c;
+    border: 1px solid #d9480f;
+  }
+  &__text {
+    font-weight: 600;
+  }
+  &__badge-number {
+    width: 3rem;
+    height: 3rem;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff4e6;
+    border-radius: 50%;
+  }
+}
+.cart--modify {
+  animation: scale-up 0.3s;
+  @keyframes scale-up {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+}

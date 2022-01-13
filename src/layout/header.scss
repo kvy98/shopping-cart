@@ -1,0 +1,10 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 2rem;
+}
+.header-bg {
+  height: 20rem;
+  background-image: url(./../assets/banner.png);
+  background-size: auto;
+}

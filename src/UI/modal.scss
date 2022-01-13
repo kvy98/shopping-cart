@@ -1,0 +1,66 @@
+.overplay {
+  font-size: 2.4rem;
+  &__bg {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    z-index: 1;
+  }
+  &__modal {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    border: 1px solid #e8590c;
+    border-radius: 2rem;
+    width: 50vw;
+    background-color: #f76707;
+    padding: 2rem 4rem;
+    @media only screen and (max-width: 600px) {
+      width: 100vw;
+      padding: 1rem;
+    }
+  }
+}
+.modal {
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  &__cart-item {
+    display: flex;
+    gap: 2rem;
+    &__control {
+      display: flex;
+      gap: 1.5rem;
+      button {
+        font-size: 1.8rem;
+        cursor: pointer;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+.btn {
+  cursor: pointer;
+  &--close {
+    font-size: 1.4rem;
+    padding: 0.2rem;
+    align-self: flex-start;
+  }
+  &--submit {
+    display: block;
+    margin: auto;
+    padding: 1rem 2rem;
+  }
+}
